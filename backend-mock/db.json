@@ -1,0 +1,17 @@
+{  
+  "project" : [
+    {
+      "id" : 1,
+      "name" : "Projeto sistema XPTO"
+    }
+  ],
+  "threats" : [
+      {
+          "id" : 1,
+          "idProject" : 1,
+          "cardId" : "L1",
+          "name" : "Ameaça xyz",
+          "description" : "Descrição da ameaça"          
+      }
+  ]
+}

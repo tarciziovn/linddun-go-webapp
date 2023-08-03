@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LINDDUN GO WebApp</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/main.js"></script>
+  <script src="js/cards.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Cabeçalho -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Fim Cabeçalho -->   
+
+    <!-- Menu Superior -->
+    <div class="row"></div>
+    <!-- https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_carousel -->
+
+    <!-- Pagina Central -->
+    <div class="row">
+      <div class="col-md-2">
+
+      </div>
+      <div class="col-md-8">
+        <div class="container-fluid">
+          <!-- CARDS -->
+          <div class="card">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1><span id="card_name" style="text-align: center"></span></h1>
+                </div>
+              </div>
+
+              <!-- Hotspot + Threat Source blocks -->
+              <div class="row">
+                <!-- Hotspot block -->
+                <div class="col-md-8">
+                  <fieldset>
+                    <legend class="float-none w-auto">Hotspot</legend>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <span id="card_hotspot_text" style="text-align: center"></span>
+                        </div>
+                        <div id="hotspot-img" class="col-md-4">
+                          <p class="card_icon">IMG</p>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <!-- Threat Source block -->
+                <div class="col-md-4">
+                  <fieldset>
+                    <legend class="float-none w-auto">Threat Source</legend>
+                    <span id="card_source" style="align-content: center"></span>
+                  </fieldset>
+                </div>
+              </div>
+
+              <!-- Description block -->
+              <div class="row">
+                <div class="col-md-12">
+                  <h2><span id="card_short_description"></span></h2>
+                </div>
+              </div>
+
+              <!-- Question block -->
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-1">
+                      <span class="card_icon">
+                        <!-- <i class="bi bi-question-lg"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-question-lg" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="col-md-11">
+                      <span id="card_questions_list"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tip block -->
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-1">
+                      <span class="card_icon">
+                        <!-- <i class="bi bi-lightbulb-fill"></i> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="col-md-11">
+                      <span id="card_tips_list"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Alert + Info block -->
+              <div class="row">
+                <div class="container-fluid">
+                  <div class="row">
+
+                    <!-- Alert block -->
+                    <div class="col-md-6">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-1 card_icon_b">
+                            <span class="card_icon_b">
+                              <!-- <i class="bi bi-exclamation-triangle-fill"></i> -->
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                                <path
+                                  d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                              </svg>
+                            </span>
+                          </div>
+                          <div class="col-md-11">
+                            <span id="card_alert"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Info block -->
+                    <div class="col-md-6">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-11">
+                            <span id="card_info"></span>
+                          </div>
+                          <div class="col-md-1 card_icon_b">
+                            <span class="card_icon_b">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                  d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                              </svg>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer block ID + Linddun highlighted -->
+              <div class="row">
+                <div class="col-md-1">
+                  <span id="card_id"></span>
+                </div>
+                <div class="col-md-11">
+                  <span id="card_linddun"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- FIM CARDS -->
+          </div>
+        </div>
+        <div class="col-md-2">
+          <button>&gt;</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+      <div id="test"></div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <script>
+      render_card(cards_deck['en'][0].cards[0]);
+    </script>
+</body>
+
+</html>

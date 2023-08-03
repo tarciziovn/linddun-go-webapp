@@ -1,0 +1,48 @@
+
+/* :root {
+    --bs-body-bg: var(--bs-gray-100);
+  } */
+
+
+.card_icon {
+  vertical-align: middle; 
+}
+.card_icon_b {
+  vertical-align: bottom; 
+}
+
+#card_name{  
+  position: relative;
+  padding: 20px;  
+  background: white;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+#card_short_description{  
+  position: relative;
+  padding: 30px;  
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+fieldset {
+  margin: 5px;
+  padding: 0 5px 5px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #666;
+  /* padding-top: 10px; */
+}
+legend {
+  padding: 2px 4px;  
+  background: #fff;
+  /* For better legibility against the box-shadow */  
+  text-align: center;    
+  position: relative;
+  margin: auto;
+  font-size: 20px;  
+}
