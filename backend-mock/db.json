@@ -8,7 +8,7 @@
   "threats" : [
       {
           "id" : 1,
-          "idProject" : 1,
+          "projectId" : 1,
           "cardId" : "L1",
           "name" : "Ameaça xyz",
           "description" : "Descrição da ameaça"          
